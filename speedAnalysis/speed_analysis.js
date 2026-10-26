@@ -1,9 +1,9 @@
-let testText = "The quick brown fox jumps over the lazy dog.";
+let testText = ["The quick brown fox jumps over the lazy dog.", "Another Dummy Text2", "Make your coding dream come true", "Pedro will marry chisome, amen."];
 let startTime, endTime;
 
 function startTest(){
     //set the test text
-    document.getElementById('inputText').value = testText;
+    document.getElementById('inputText').value = testText[Math.floor(Math.random() * testText.length)];
 
     //reset user input, make the not readonly and focus the input text
     let userInput = document.getElementById('userInput');
